@@ -1,0 +1,40 @@
+#include<iostream>
+using namespace std;
+template<class T>
+class emp
+{
+    private:
+    char name[30];
+    T salary;
+    public:
+    void read()
+    {
+        cin>>salary;
+    }
+    T pay()
+    {
+        return salary;
+    }
+};
+int main()
+{
+    emp<int>e1;
+    emp<float>e2;
+    emp<double>e3;
+    emp<long int>e4;
+    cout<<"enter integer value";
+    e1.read();
+    cout<<e1.pay();
+    cout<<"enter float value";
+    e2.read();
+    cout<<e2.pay();
+    cout<<"enter double value";
+    e3.read();
+    cout<<e3.pay();
+    cout<<"enter long int value";
+    e4.read();
+    cout<<e4.pay();
+
+}
+
+
